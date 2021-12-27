@@ -1,0 +1,182 @@
+.chatting-screen {
+  background-color: rgb(255, 250, 239);
+}
+
+.chatting-screen__chatting {
+  background-color: rgb(255, 250, 239);
+}
+
+.screen-header__chatting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 15px 20px;
+  margin-bottom: 20px;
+}
+
+.screen-header__chatting > * {
+  width: 33%;
+}
+
+.screen-header__title-chatting {
+  text-align: center;
+  font-size: 22px;
+}
+
+.screen-header__chatting--icons {
+  text-align: end;
+}
+
+.screen-header__chatting--icons i {
+  margin-left: 20px;
+}
+
+.chat-component__date {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.chat-component__date span {
+  font-size: 13px;
+  color: white;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 30px;
+}
+
+.chatting__chattee {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chatting__chattee--avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 35%;
+  background-color: navy;
+  margin-right: 5px;
+}
+
+.chatting__chattee--name {
+  display: block;
+  margin: 10px 5px;
+  color: rgb(90, 90, 90);
+  font-size: 13px;
+}
+
+.chatting__chattee--bubble-time {
+  display: flex;
+  align-items: flex-end;
+}
+
+.chatting__chattee--bubble {
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 0px 3px;
+  position: relative;
+  width: fit-content;
+}
+
+.chatting__chattee--bubble p {
+  font-size: 15px;
+}
+.chatting__chattee--bubble-time span {
+  font-size: 11px;
+}
+
+.chatting__chattee--bubble-tip {
+  position: absolute;
+}
+
+.chatting__chatter {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chatting__chatter--bubble {
+  background-color: rgb(211, 239, 255);
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 0px 3px;
+  position: relative;
+  width: fit-content;
+}
+
+.chatting__chatter--bubble-time {
+  display: flex;
+  align-items: flex-end;
+}
+
+.chatting__chatter--bubble-time span {
+  font-size: 11px;
+}
+
+.chatting__chatter--bubble p {
+  font-size: 15px;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply i {
+  color: gray;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply .reply__column:last-child > i,
+.reply .reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+}
+
+.reply .reply__column:last-child > i {
+  right: 40px;
+  top: 7px;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--bottom-border);
+  border-radius: 20px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+.reply__column button {
+  background-color: turquoise;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.reply__column button i {
+  color: black;
+}

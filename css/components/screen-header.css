@@ -1,0 +1,46 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 15px 20px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.screen-header__icons > * {
+  margin-left: 25px;
+}
+
+.screen-header__icons--cog {
+  position: relative;
+}
+
+.cog__dots {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  color: white;
+  font-weight: normal;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog {
+  animation: rotateCog 1s linear infinite;
+}
